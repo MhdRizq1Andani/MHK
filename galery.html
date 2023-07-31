@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>About Us</title>
+</head>
+<body>
+	
+<!-- Bagian Header dan Navigasi -->
+
+	<section class="sub-header">
+		
+		<nav>
+			<a href="index.html"><img src="img/logo-web.png" alt=""></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-bars" id="dua" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="pengumuman.html">Pengumuman</a></li>
+					<li><a href="galery.html">Galery</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		
+			<h1>Magister Hukum Kesehatan</h1>
+			
+	</section>
+
+
+
+
+<!-- -------Galery------- -->
+
+	<section class="galery">
+		<h1>Galery</h1>
+		<hr>
+		<div class="row">
+			
+			<div class="galery-col">
+				<img src="img/pengantaran.jpeg" alt="">
+				<p>Pengantaran Mahasiswa MBKM</p>
+			</div>
+			<div class="galery-col">
+				<img src="img/kaprodi.png" alt="">
+				<p>Kaprodi Magister Hukum Kesehatan</p>
+			</div>
+			<div class="galery-col">
+				<img src="img/unpab1.png" alt="">
+				<p>Kampus 1 UNPAB</p>
+			</div>
+		</div>
+	</section>
+
+
+
+<!-- -------Footer------- -->
+	<footer>
+		<div class="card">
+			<h4>About Us</h4>
+			<p>Kunjungi media sosial kami</p>
+			<div class="icons">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fa fa-instagram"></i></a>
+				<a href=""><i class="fa fa-youtube"></i></a>
+			</div>
+			<p>COPYRIGHT 2023. ALL RIGHTS RESERVED. Universitas Pembangunan Panca Budi</p>
+		</div>
+	</footer>
+
+
+
+<!-- java script untuk tombol menu di header bagian navigasi -->
+
+	<script>
+		
+		var navlinks = document.getElementById("navLinks");
+
+		function showMenu(){
+			navlinks.style.display = "block";
+		}
+		function hideMenu(){
+			navlinks.style.display = "none";
+		}
+	</script>
+
+</body>
+</html>
